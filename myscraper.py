@@ -11,7 +11,7 @@ def myscrap(tag):
     data = r.content
     soup = BeautifulSoup(data, 'html.parser')
 
-    # Parameters to extract specific info from JTML
+    # Parameters to extract specific info from HTML
     dct_post = {'class': 'quote'}
     dct_quote = {'class': 'text', 'itemprop': 'text'}
     dct_author = {'class': 'author', 'itemprop': 'author'}
